@@ -1,0 +1,295 @@
+#shiyu-html-exporter-settings .inline-drawer-content {
+    color: var(--SmartThemeBodyColor);
+    font-size: var(--mainFontSize);
+    line-height: 1.45;
+}
+
+#shiyu-html-exporter-settings .html-exporter-actions {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+#shiyu-html-exporter-settings .html-exporter-actions .menu_button {
+    flex: 1 1 180px;
+    line-height: 1.2;
+    min-height: 32px;
+    min-width: 0;
+    white-space: normal;
+}
+
+#shiyu-html-exporter-settings .html-exporter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+#shiyu-html-exporter-settings .html-exporter-options > label:not(.checkbox_label),
+#shiyu-html-exporter-settings .html-exporter-field > label {
+    color: var(--SmartThemeBodyColor);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+#shiyu-html-exporter-settings .checkbox_label {
+    align-items: center;
+    column-gap: 8px;
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+    line-height: 1.35;
+    margin: 0;
+}
+
+#shiyu-html-exporter-settings .checkbox_label input[type="checkbox"] {
+    height: 18px;
+    margin: 0;
+    place-self: center;
+    width: 18px;
+}
+
+#shiyu-html-exporter-settings .checkbox_label span {
+    min-width: 0;
+}
+
+#shiyu-html-exporter-settings .html-exporter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#shiyu-html-exporter-settings .html-exporter-select {
+    box-sizing: border-box;
+    font: inherit;
+    width: 100%;
+}
+
+#shiyu-html-exporter-settings .notes {
+    color: var(--SmartThemeEmColor, var(--SmartThemeBodyColor));
+    font-size: calc(var(--mainFontSize) * 0.9);
+    line-height: 1.35;
+    opacity: 0.9;
+}
+
+#shiyu-html-exporter-settings .html-exporter-status {
+    flex: 1 1 260px;
+    min-height: 18px;
+    min-width: 0;
+}
+
+#shiyu-html-exporter-settings .html-exporter-status-row {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+#shiyu-html-exporter-settings .html-exporter-cancel-export {
+    flex: 0 0 auto;
+    min-height: 30px;
+    min-width: 96px;
+    padding-inline: 10px;
+    white-space: nowrap;
+}
+
+#shiyu-html-exporter-settings .html-exporter-textarea {
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 1.45;
+    min-height: 96px;
+    resize: vertical;
+    width: 100%;
+}
+
+#shiyu-html-exporter-settings code {
+    color: var(--SmartThemeQuoteColor, currentColor);
+    user-select: text;
+}
+
+@media (max-width: 700px) {
+    #shiyu-html-exporter-settings .inline-drawer-content {
+        font-size: var(--mainFontSize);
+    }
+
+    #shiyu-html-exporter-settings .html-exporter-actions .menu_button {
+        flex-basis: 220px;
+    }
+
+    #shiyu-html-exporter-settings .html-exporter-status-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    #shiyu-html-exporter-settings .html-exporter-cancel-export {
+        width: 100%;
+    }
+}
+
+.shiyu-html-exporter-select-mode .mes {
+    position: relative;
+}
+
+.shiyu-html-exporter-message-checkbox {
+    align-items: center;
+    background: var(--SmartThemeBlurTintColor, rgba(20, 20, 20, 0.85));
+    border: 1px solid var(--SmartThemeBorderColor, rgba(255, 255, 255, 0.25));
+    border-radius: 6px;
+    display: flex;
+    gap: 6px;
+    left: 8px;
+    padding: 4px 6px;
+    position: absolute;
+    top: 8px;
+    z-index: 20;
+}
+
+.shiyu-html-exporter-message-checkbox input {
+    margin: 0;
+}
+
+.shiyu-html-exporter-selected-outline {
+    outline: 2px solid var(--SmartThemeQuoteColor, #7aa2ff);
+    outline-offset: -2px;
+}
+
+.html-exporter-search-modal[hidden] {
+    display: none;
+}
+
+.html-exporter-search-modal {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    color: var(--SmartThemeBodyColor);
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding: 16px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 40000;
+}
+
+.html-exporter-search-panel {
+    background: var(--SmartThemeBlurTintColor, rgba(24, 24, 24, 0.96));
+    border: 1px solid var(--SmartThemeBorderColor, rgba(255, 255, 255, 0.24));
+    border-radius: 8px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: calc(100dvh - 32px);
+    overflow: hidden;
+    padding: 14px;
+    width: min(820px, calc(100vw - 32px));
+}
+
+.html-exporter-search-header,
+.html-exporter-search-row,
+.html-exporter-search-result-header {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.html-exporter-search-header h2 {
+    flex: 1 1 auto;
+    font-size: calc(var(--mainFontSize) * 1.15);
+    line-height: 1.25;
+    margin: 0;
+    min-width: 0;
+}
+
+.html-exporter-search-close {
+    flex: 0 0 auto;
+    min-width: 36px;
+}
+
+.html-exporter-search-input {
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    font: inherit;
+    min-width: 0;
+}
+
+.html-exporter-search-submit {
+    flex: 0 0 auto;
+}
+
+.html-exporter-search-help,
+.html-exporter-search-status {
+    margin: 0;
+}
+
+.html-exporter-search-status {
+    color: var(--SmartThemeEmColor, var(--SmartThemeBodyColor));
+    line-height: 1.35;
+}
+
+.html-exporter-search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: auto;
+    padding-right: 2px;
+}
+
+.html-exporter-search-result {
+    border: 1px solid var(--SmartThemeBorderColor, rgba(255, 255, 255, 0.18));
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.html-exporter-search-floor {
+    flex: 0 0 auto;
+    min-width: 72px;
+}
+
+.html-exporter-search-meta {
+    color: var(--SmartThemeEmColor, var(--SmartThemeBodyColor));
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.html-exporter-search-preview {
+    line-height: 1.55;
+    margin: 8px 0 0;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.html-exporter-search-preview mark {
+    background: color-mix(in srgb, var(--SmartThemeQuoteColor, #7aa2ff) 42%, transparent);
+    border-radius: 3px;
+    color: var(--SmartThemeBodyColor);
+    padding: 0 2px;
+}
+
+@media (max-width: 700px) {
+    .html-exporter-search-modal {
+        align-items: stretch;
+        padding: 10px;
+        padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 10px);
+        padding-top: calc(env(safe-area-inset-top, 0px) + 10px);
+    }
+
+    .html-exporter-search-panel {
+        max-height: calc(100dvh - 20px);
+        padding: 10px;
+        width: 100%;
+    }
+
+    .html-exporter-search-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .html-exporter-search-submit {
+        width: 100%;
+    }
+}

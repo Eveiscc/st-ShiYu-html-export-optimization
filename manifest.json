@@ -1,0 +1,11 @@
+{
+    "display_name": "\u62fe\u7389-HTML\u5bfc\u51fa",
+    "loading_order": 1001,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "玉玑",
+    "version": "0.8.17",
+    "description": "\u62fe\u53d6\u5f53\u524d\u5df2\u6e32\u67d3\u7684\u804a\u5929\u697c\u5c42\uff0c\u5bfc\u51fa\u4e3a\u4fdd\u7559\u7f8e\u5316\u6548\u679c\u3001\u5185\u5d4c\u8d44\u6e90\u3001\u5e26\u6536\u85cf\u548c\u76ee\u5f55\u5bfc\u822a\u7684\u81ea\u5305\u542b HTML \u6587\u4ef6"
+}
